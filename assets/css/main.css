@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Yekan Bakh Regular';
+  src: url('/public/fonts/Yekan Bakh Regular.ttf');
+}
+
+body {
+  background: #eeeeee57;
+}
+
+* {
+  outline: none;
+}
+
+.before-line {
+  @apply relative before:content-[''] before:absolute before:w-[5px] before:bg-primary before:h-full before:top-0 before:right-0 before:rounded-full mb-5
+}
+
+.after-line {
+  @apply relative mb-5;
+}
+
+@media (min-width: 1024px) {
+  .after-line::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: -0.5rem;
+    background-color: theme('colors.primary');
+    border-radius: 9999px;
+  }
+}
+
+.title {
+  @apply font-bold mb-3 text-2xl text-secondary relative before:content-[''] before:absolute before:w-[5px] before:bg-secondary before:h-full before:top-0 before:right-0 pr-6 before:rounded-full
+}
+
+/* :root {
+  --p-select-option-selected-color: red;
+
+  --p-select-option-focus-color: red;
+} */
