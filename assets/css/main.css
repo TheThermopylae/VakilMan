@@ -5,6 +5,7 @@
 @font-face {
   font-family: 'Yekan Bakh Regular';
   src: url('/public/fonts/Yekan Bakh Regular.ttf');
+  font-display: swap;
 }
 
 body {
@@ -39,9 +40,3 @@ body {
 .title {
   @apply font-bold mb-3 text-2xl text-secondary relative before:content-[''] before:absolute before:w-[5px] before:bg-secondary before:h-full before:top-0 before:right-0 pr-6 before:rounded-full
 }
-
-/* :root {
-  --p-select-option-selected-color: red;
-
-  --p-select-option-focus-color: red;
-} */

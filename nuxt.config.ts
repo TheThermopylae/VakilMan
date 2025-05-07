@@ -25,9 +25,9 @@ export default defineNuxtConfig({
       bodyAttrs: {
         dir: 'rtl'
       },
-      // link: [
-      //   { rel: 'icon', href: '/logo.png' }
-      // ]
+      link: [
+        { rel: 'icon', href: '/logo.svg' }
+      ]
     },
   },
   devtools: { enabled: true },

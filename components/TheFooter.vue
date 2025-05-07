@@ -1,13 +1,15 @@
 <template>
   <footer class="bg-[#091044] text-white">
     <FooterTopSection></FooterTopSection>
-    <div class="w-10/12 2xl:w-9/12 m-auto grid md:grid-cols-2 xl:grid-cols-4 gap-10 place-conten-center mt-8">
+    <div
+      class="w-10/12 2xl:w-9/12 m-auto grid md:grid-cols-2 xl:grid-cols-4 gap-10 place-conten-center mt-8"
+    >
       <div>
         <div class="bg-[#FFFFFF12] px-4 py-3 rounded-lg">
           <div
             class="flex items-center font-black border-b border-[#FFFFFF36] pb-2"
           >
-            <img src="/logo.svg" alt="logo" />
+            <img src="/logolanding.svg" alt="logo" />
             <div class="flex flex-col">
               <span>وکیل من</span>
               <p>مشاوره حقوقی و قضایی</p>
@@ -109,7 +111,9 @@
           </svg>
         </div>
       </div>
-      <div class="xl:place-items-center border-b border-primary pb-10 xl:border-0 xl:p-0">
+      <div
+        class="xl:place-items-center border-b border-primary pb-10 xl:border-0 xl:p-0"
+      >
         <h3 class="font-bold mb-8 text-center md:text-right">لینک های سایت</h3>
         <ul class="leading-10 list-disc pr-6">
           <li>تصاویر</li>
@@ -123,13 +127,13 @@
       <div class="border-b border-primary pb-10 md:border-0 md:p-0">
         <h3 class="font-bold mb-8 text-center md:text-right">اطلاعات تماس</h3>
         <ul class="leading-7">
-          <li>
+          <li class="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="50"
+              height="50"
               viewBox="0 0 24 24"
-              class="float-right ml-2"
+              class="flex items-start h-fit ml-2"
             >
               <path
                 fill="currentColor"
@@ -139,13 +143,13 @@
             ولیعصر به سمت میدان ونک، بالاتر از پل همت، کوچه سیدالشهدا، پلاک یک،
             واحد ۵۰۲
           </li>
-          <li class=" gap-2 my-10">
+          <li class="flex my-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
               viewBox="0 0 24 24"
-              class="float-right"
+              class="flex items-start h-fit ml-2"
             >
               <path
                 fill="currentColor"
@@ -154,13 +158,13 @@
             </svg>
             02188666751
           </li>
-          <li>
+          <li class="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
               viewBox="0 0 24 24"
-              class="float-right ml-2"
+              class="flex items-start h-fit ml-2"
             >
               <g fill="none">
                 <path
@@ -187,7 +191,9 @@
       </div>
     </div>
     <div class="bg-[#020622] p-3 text-center mt-8">
-      <p>تمامی حقوق برای شرکت <span class="text-primary">وکیل من</span>  محفوظ است</p>
+      <p>
+        تمامی حقوق برای شرکت <span class="text-primary">وکیل من</span> محفوظ است
+      </p>
     </div>
   </footer>
 </template>

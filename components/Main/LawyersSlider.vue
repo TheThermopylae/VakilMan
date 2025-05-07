@@ -16,7 +16,7 @@
       class="mySwiper !px-5 !pb-10"
     >
       <swiper-slide v-for="item in 8"
-        ><MainLawyerCard class="w-2/3 m-auto md:w-auto"></MainLawyerCard
+        ><MainLawyerCard class="w-3/4 m-auto md:w-auto"></MainLawyerCard
       ></swiper-slide>
     </swiper>
   </div>

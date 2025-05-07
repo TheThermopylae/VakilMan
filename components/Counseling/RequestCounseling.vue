@@ -11,8 +11,8 @@
         صفحه مراجعه کنید.
       </p>
     </div>
-    <div class="grid md:grid-cols-2 xl:grid-cols-3 mt-10 gap-5 xl:gap-10">
-      <div class="before-line md:col-span-2 xl:col-span-1">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 mt-10 gap-5 xl:gap-7">
+      <div class="before-line md:col-span-2 xl:col-span-1 h-fit">
         <h2 class="text-secondary title">درخواست مشاوره</h2>
         <p class="pr-6 text-justify leading-[35px]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده

@@ -16,7 +16,7 @@
         <img src="/logolanding.svg" alt="logo" class="hidden lg:block" />
         <ul class="hidden lg:flex gap-10">
           <li><NuxtLink to="/">صفحه ی اصلی</NuxtLink></li>
-          <li>مشاوره آنلاین</li>
+          <li><NuxtLink to="/counseling">مشاوره آنلاین</NuxtLink></li>
           <li>مشاوره تلفنی</li>
           <li><NuxtLink to="/contact-us">تماس با ما</NuxtLink></li>
           <li><NuxtLink to="/about-us">درباره ی ما</NuxtLink></li>
