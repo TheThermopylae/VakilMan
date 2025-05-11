@@ -22,7 +22,7 @@
     <div class="hidden lg:block">
       <nuxtLink to="/">ورود</nuxtLink>
       <nuxtLink
-        to="/"
+        to="/user-panel/"
         class="mr-7 bg-primary px-12 py-2.5 rounded-md text-black"
         >عضویت</nuxtLink
       >

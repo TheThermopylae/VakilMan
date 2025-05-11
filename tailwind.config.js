@@ -24,7 +24,8 @@ module.exports = {
         primary: '#E59F2E',
         secondary: '#001A46',
         tertiary: '#EAB250',
-        quaternary: '#FFDDAB'
+        quaternary: '#FFDDAB',
+        'c-gray': '#A0AEC0'
       },
       fontFamily: {
         sans: ['Yekan Bakh Regular']
