@@ -40,7 +40,7 @@
           />
         </svg>
       </div>
-      <div class="md:col-span-2 flex flex-col md:flex-row gap-7">
+      <div class="md:col-span-2 flex flex-col md:flex-row gap-4 md:gap-7">
         <MainServiceCard
           v-for="item in [0, 1]"
           :key="item"
@@ -48,7 +48,7 @@
         ></MainServiceCard>
       </div>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-7 mt-7">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 mt-4 md:mt-7">
       <MainServiceCard v-for="item in 4"></MainServiceCard>
     </div>
   </section>

@@ -14,7 +14,7 @@
       class="mySwiper pb-4"
     >
       <swiper-slide v-for="item in 8" :key="item">
-        <CounselingCommentCard />
+        <CommentCard />
       </swiper-slide>
     </swiper>
     <div class="flex justify-center gap-3">

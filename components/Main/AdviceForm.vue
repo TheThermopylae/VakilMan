@@ -36,7 +36,7 @@
           />
         </div>
       </div>
-      <div class="lg:w-2/3 bg-secondary rounded-xl p-5 relative mt-2 lg:m-0">
+      <div class="lg:w-2/3 bg-secondary rounded-xl p-3 md:p-5 relative mt-2 lg:m-0">
         <div
           class="border-2 border-dashed h-full border-[#FFFFFF4A] rounded-xl p-5"
         >
@@ -46,7 +46,7 @@
           <input
             type="text"
             id="text"
-            class="bg-transparent block w-full outline-none mt-1 text-[#eee]"
+            class="bg-transparent block w-full outline-none mt-1 text-[#eee] placeholder:text-sm"
             placeholder="در این قسمت خلاصه ای از پرونده ی حقوقی خود را وارد کنید ..."
           />
         </div>

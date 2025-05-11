@@ -140,7 +140,7 @@
       </div>
     </div>
     <div class="container m-auto mt-8">
-      <CounselingCommentSlider></CounselingCommentSlider>
+      <CommentSlider></CommentSlider>
     </div>
   </section>
 </template>
