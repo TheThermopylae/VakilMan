@@ -21,16 +21,20 @@
           />
         </svg>
 
-        <h3 class="text-lg font-bold">مشاوره های تلفنی</h3>
+        <h3 class="md:text-lg lg:text-sm xl:text-lg font-bold">
+          مشاوره های تلفنی
+        </h3>
       </div>
       <NuxtLink
         to="/"
-        class="border border-primary text-primary px-2 py-1.5 rounded-md hover:bg-primary hover:text-white transition-all"
-        >درخواست مشاوره جدید</NuxtLink
+        class="border border-primary text-primary px-2 py-1.5 rounded-md hover:bg-primary hover:text-white transition-all text-sm md:text-lg lg:text-sm xl:text-lg"
+        >درخواست مشاوره </NuxtLink
       >
     </div>
     <div class="flex justify-between">
-      <div class="md:flex items-center gap-2 text-center md:text-right">
+      <div
+        class="md:flex lg:block xl:flex items-center gap-1.5 text-center md:text-right lg:text-center xl:text-right"
+      >
         <div
           class="w-[45px] h-[45px] bg-primary rounded-xl flex justify-center items-center m-auto"
         >
@@ -88,11 +92,13 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0">تعداد کل</h4>
+          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">تعداد کل</h4>
           10
         </div>
       </div>
-      <div class="md:flex items-center gap-2 text-center md:text-right">
+      <div
+        class="md:flex lg:block xl:flex items-center gap-1.5 text-center md:text-right lg:text-center xl:text-right"
+      >
         <div
           class="w-[45px] h-[45px] bg-primary rounded-xl flex justify-center items-center m-auto"
         >
@@ -110,11 +116,13 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0">پاسخ داده شده</h4>
+          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">پاسخ داده شده</h4>
           5
         </div>
       </div>
-      <div class="md:flex items-center gap-2 text-center md:text-right">
+      <div
+        class="md:flex lg:block xl:flex items-center gap-1.5 text-center md:text-right lg:text-center xl:text-right"
+      >
         <div
           class="w-[45px] h-[45px] bg-primary rounded-xl flex justify-center items-center m-auto"
         >
@@ -132,7 +140,7 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0">نیازمند پاسخ</h4>
+          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">نیازمند پاسخ</h4>
           5
         </div>
       </div>

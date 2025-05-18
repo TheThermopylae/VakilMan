@@ -7,10 +7,10 @@
 <script setup>
 definePageMeta({
   layout: false,
-  
+  redirect: '/user-panel/dashboard',
 })
 
 useHead({
-  titleTemplate : 'داشبورد کاربری | %s'
+  titleTemplate: 'داشبورد کاربری | %s'
 })
 </script>

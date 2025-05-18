@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <ul class="mt-8">
+    <ul class="mt-8 text-secondary font-bold">
       <li>
         <NuxtLink
           to="/user-panel/dashboard"
@@ -85,7 +85,10 @@
       </li>
       <li>
         <NuxtLink
-          to="/user-panel/profile"
+          to="/user-panel/profile/"
+          :class="{
+            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]': route.path.startsWith('/user-panel/profile')
+          }"
           class="flex justify-between items-center px-5 py-4"
         >
           <div class="flex gap-3">
@@ -124,10 +127,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/"
-          class="flex justify-between items-center px-5 py-4"
-        >
+        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="20"
@@ -165,10 +165,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/"
-          class="flex justify-between items-center px-5 py-4"
-        >
+        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="18"
@@ -205,10 +202,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/"
-          class="flex justify-between items-center px-5 py-4"
-        >
+        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="18"
@@ -246,10 +240,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/"
-          class="flex justify-between items-center px-5 py-4"
-        >
+        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="19"
@@ -292,6 +283,10 @@ ul li svg {
 }
 
 ul li .router-link-active {
-  background: linear-gradient(to right, #fcc2653d 24%, #f8b92600);
+  background: linear-gradient(to right, #fcc2653d, #f8b92600);
 }
 </style>
+
+<script setup>
+let route = useRoute()
+</script>

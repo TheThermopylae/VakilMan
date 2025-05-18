@@ -40,3 +40,7 @@ body {
 .title {
   @apply font-bold mb-3 text-2xl text-secondary relative before:content-[''] before:absolute before:w-[5px] before:bg-secondary before:h-full before:top-0 before:right-0 pr-6 before:rounded-full
 }
+
+.req{
+  @apply after:content-['*'] after:text-red-500 after:font-bold
+}
