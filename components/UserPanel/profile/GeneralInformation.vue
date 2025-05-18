@@ -27,7 +27,22 @@
         </div>
         <div>
           <label class="req">جنسیت : </label>
-
+          <div class="card flex justify-center">
+            <Select
+              v-model="userData.gender"
+              :options="genders"
+              optionLabel="name"
+              placeholder="انتخاب کنید"
+              class="w-full my-2 md:mb-0 rounded border border-gray-300 bg-[#F7F7F8] h-[46px]"
+              :pt="{
+                option: ({ context }) => ({
+                  class: context.selected ? 'bg-secondary text-white' : ''
+                }),
+                label: 'p-3 text-gray-400',
+                root: 'hover:border-gray-300'
+              }"
+            />
+          </div>
         </div>
         <div>
           <label for="profile">پروفایل : </label>
