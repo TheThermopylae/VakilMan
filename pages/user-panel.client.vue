@@ -11,6 +11,6 @@ definePageMeta({
 })
 
 useHead({
-  titleTemplate: 'داشبورد کاربری | %s'
+  titleTemplate: 'داشبورد کاربری %s'
 })
 </script>

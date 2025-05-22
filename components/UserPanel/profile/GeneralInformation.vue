@@ -33,7 +33,7 @@
               :options="genders"
               optionLabel="name"
               placeholder="انتخاب کنید"
-              class="w-full my-2 md:mb-0 rounded border border-gray-300 bg-[#F7F7F8] h-[46px]"
+              class="w-full mt-2 rounded border border-gray-300 bg-[#F7F7F8]"
               :pt="{
                 option: ({ context }) => ({
                   class: context.selected ? 'bg-secondary text-white' : ''

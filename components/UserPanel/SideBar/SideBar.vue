@@ -127,7 +127,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink to="/user-panel/orders" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="20"
@@ -165,7 +165,7 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink to="/user-panel/comments" class="flex justify-between items-center px-5 py-4">
           <div class="flex gap-3">
             <svg
               width="18"
