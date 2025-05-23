@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Yekan Bakh Regular';
-  src: url('/public/fonts/Yekan Bakh Regular.ttf');
-  font-display: swap;
+  font-family: 'YekanBakhFaNum-Regular';
+  src:
+    url('../../public/fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2'),
+    url('../../public/fonts/woff/YekanBakhFaNum-Regular.woff') format('woff'),
+    url('../../public/fonts/ttf/YekanBakhFaNum-Regular.ttf') format('truetype');
 }
 
 body {
   background: #eeeeee7c;
+  font-family: 'YekanBakhFaNum-Regular';
 }
 
 * {
@@ -41,6 +44,6 @@ body {
   @apply font-bold mb-3 text-2xl text-secondary relative before:content-[''] before:absolute before:w-[5px] before:bg-secondary before:h-full before:top-0 before:right-0 pr-6 before:rounded-full
 }
 
-.req{
+.req {
   @apply after:content-['*'] after:text-red-500 after:font-bold
 }
