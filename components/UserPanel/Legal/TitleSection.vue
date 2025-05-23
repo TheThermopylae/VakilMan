@@ -1,6 +1,6 @@
 <template>
   <section class="md:flex justify-between items-center">
-    <h1 class="text-lg font-bold mb-3 md:m-0">دیدگاه های من</h1>
+    <h1 class="text-lg font-bold mb-3 md:m-0">درخواست های حقوقی</h1>
     <div class="md:flex gap-4">
       <div class="relative">
         <input
@@ -32,7 +32,7 @@
           </g>
         </svg>
       </div>
-      <NuxtLink to="/user-panel/legal/request" class="bg-secondary text-white rounded px-6 py-2">درخواست جدید</NuxtLink>
+      <NuxtLink to="/user-panel/legal/request" class="bg-secondary text-white rounded px-6 py-2 inline-block">درخواست جدید</NuxtLink>
     </div>
   </section>
 </template>

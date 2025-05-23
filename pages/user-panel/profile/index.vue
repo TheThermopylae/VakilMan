@@ -6,7 +6,7 @@
 
 <script setup>
 useHead({
-  title: 'ویرایش اطلاعات شخصی'
+  title: '| ویرایش اطلاعات شخصی'
 })
 
 let userData = reactive({

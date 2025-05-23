@@ -1,6 +1,6 @@
 <template>
   <section class="2xl:flex justify-between items-center">
-    <h1 class="text-lg font-bold mb-3 2xl:m-0">دیدگاه های من</h1>
+    <h1 class="text-lg font-bold mb-3 2xl:m-0">درخواست مشاوره</h1>
     <div class="2xl:flex gap-2">
       <div class="relative">
         <input
@@ -35,19 +35,19 @@
       <div class="grid md:grid-cols-3 gap-2 mt-2 2xl:m-0">
         <nuxtLink
           to="/user-panel/advice/request"
-          class="rounded px-6 py-2 text-white block w-full 2xl:w-auto 2xl:m-0 bg-[#17A4F4]"
+          class="rounded px-2 2xl:px-6 py-2 text-white block w-full 2xl:w-auto 2xl:m-0 bg-[#17A4F4]"
         >
           مشاوره ی تلفنی
         </nuxtLink>
         <nuxtLink
           to="/"
-          class="rounded px-6 py-2 text-white block w-full 2xl:w-auto 2xl:m-0 bg-[#1A8D48]"
+          class="rounded px-2 2xl:px-6 py-2 text-white block w-full 2xl:w-auto 2xl:m-0 bg-[#1A8D48]"
         >
           مشاوره ی آنلاین
         </nuxtLink>
         <nuxtLink
           to="/"
-          class="rounded px-6 py-2 text-white block w-full 2xl:w-auto bg-secondary"
+          class="rounded px-2 2xl:px-6 py-2 text-white block w-full 2xl:w-auto bg-secondary"
         >
           درخواست جدید
         </nuxtLink>

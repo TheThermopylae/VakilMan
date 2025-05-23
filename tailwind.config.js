@@ -27,7 +27,7 @@ module.exports = {
         'c-gray': '#A0AEC0'
       },
       fontFamily: {
-        sans: ['Yekan Bakh Regular']
+        sans: ['YekanBakhFaNum-Regular']
       }
     }
   },

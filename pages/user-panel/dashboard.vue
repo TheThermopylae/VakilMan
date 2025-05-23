@@ -9,6 +9,6 @@
 
 <script setup>
 useHead({
-  title: 'میزکار'
+  title: '| میزکار'
 })
 </script>
