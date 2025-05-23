@@ -13,7 +13,7 @@
               type="password"
               id="current-password"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
             />
           </div>
           <div>
@@ -22,7 +22,7 @@
               type="password"
               id="new-password"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
             />
           </div>
           <div>
@@ -33,7 +33,7 @@
               type="password"
               id="repeat-new-password"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
             />
           </div>
         </div>

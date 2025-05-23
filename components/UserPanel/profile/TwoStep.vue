@@ -30,13 +30,13 @@
               :options="types"
               optionLabel="name"
               placeholder="انتخاب کنید"
-              class="w-full md:w-[280px] my-2 md:mb-0 rounded border border-gray-300 bg-[#F7F7F8] h-[46px]"
+              class="w-full md:w-[280px] my-2 md:mb-0 rounded border border-[#EFEFEF] bg-[#F7F7F8] h-[46px]"
               :pt="{
                 option: ({ context }) => ({
-                  class: context.selected ? 'bg-secondary text-white' : ''
+                  class: context.selected ? 'bg-secondary !text-white' : ''
                 }),
                 label: 'p-3 text-gray-400',
-                root: 'hover:border-gray-300'
+                root: 'hover:!border-[#EFEFEF] !bg-[#F7F7F8]'
               }"
             />
           </div>

@@ -1,22 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
-import { Select } from 'primevue';
 const MyPreset = definePreset(Aura, {
   semantic: {
     primary: {
-      50: '{#001A46}',
-      100: '{#001A46}',
-      200: '{#001A46}',
-      300: '{#001A46}',
-      400: '{#001A46}',
-      500: '{#001A46}',
-      600: '{#001A46}',
-      700: '{#001A46}',
-      800: '{#001A46}',
-      900: '{#001A46}',
-      950: '{#001A46}'
+      50: '#001A46',
+      100: '#001A46',
+      200: '#001A46',
+      300: '#001A46',
+      400: '#001A46',
+      500: '#001A46',
+      600: '#001A46',
+      700: '#001A46',
+      800: '#001A46',
+      900: '#001A46',
+      950: '#001A46'
     },
+  },
+  pt: {
+    button: {
+      root: {
+        class: 'border-0'
+      }
+    }
   }
 })
 export default defineNuxtConfig({
@@ -48,12 +54,11 @@ export default defineNuxtConfig({
       inputVariant: 'filled',
       theme: {
         preset: MyPreset,
-
         options: {
           prefix: 'p',
           darkModeSelector: 'none',
-          cssLayer: false
-        }
+          cssLayer: false,
+        },
       }
     },
   }

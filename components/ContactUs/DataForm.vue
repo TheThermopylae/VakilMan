@@ -6,7 +6,7 @@
       اگر نیاز به مشاوره حقوقی دارید به صفحه مربوطه مراجعه کنید. به سوالات حقوقی
       شما در فرم تماس با ما ترتیب اثر داده نخواهد شد.
     </div>
-    <form>
+    <form @submit.prevent>
       <div class="grid md:grid-cols-2 gap-5">
         <div>
           <label for="full-name">نام و نام خانوادگی </label>
@@ -43,11 +43,13 @@
               :options="cities"
               optionLabel="name"
               placeholder="انتخاب کنید"
-              class="w-full mt-1 p-0.5 rounded border-none bg-[#F7F7F8] [&_.p-select-label]:text-gray-500"
+              class="w-full mt-1 rounded border-none shadow-none  [&_.p-select-label]:text-gray-500"
               :pt="{
                 option: ({ context }) => ({
-                  class: context.selected ? 'bg-secondary text-white' : ''
-                })
+                  class: context.selected ? 'bg-secondary !text-white' : ''
+                }),
+                label : 'p-3',
+                root : '!bg-[#F7F7F8]'
               }"
             />
           </div>

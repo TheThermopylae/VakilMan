@@ -1,4 +1,5 @@
 <template>
+  <UserPanelTheDrawer></UserPanelTheDrawer>
   <div
     class="container m-auto py-5 flex justify-between gap-5 items-start overflow-hidden"
   >

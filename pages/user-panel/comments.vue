@@ -1,5 +1,6 @@
 <template>
-    kir
+    <UserPanelCommentsTitleSection></UserPanelCommentsTitleSection>
+    <UserPanelCommentsSection></UserPanelCommentsSection>
 </template>
 
 <script setup>

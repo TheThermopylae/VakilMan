@@ -14,7 +14,7 @@
               type="email"
               id="email"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
               v-model="userData.email"
             />
           </div>
@@ -26,7 +26,7 @@
               type="email"
               id="repeat-email"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
               v-model="userData.repeatEmail"
             />
           </div>
@@ -36,7 +36,7 @@
               type="number"
               id="phone"
               placeholder="وارد کنید"
-              class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+              class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
               v-model="userData.phone"
             />
           </div>

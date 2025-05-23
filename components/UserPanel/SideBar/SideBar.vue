@@ -87,7 +87,8 @@
         <NuxtLink
           to="/user-panel/profile/"
           :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]': route.path.startsWith('/user-panel/profile')
+            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
+              route.path.startsWith('/user-panel/profile')
           }"
           class="flex justify-between items-center px-5 py-4"
         >
@@ -127,7 +128,10 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/user-panel/orders" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/user-panel/orders"
+          class="flex justify-between items-center px-5 py-4"
+        >
           <div class="flex gap-3">
             <svg
               width="20"
@@ -165,7 +169,10 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/user-panel/comments" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/user-panel/comments"
+          class="flex justify-between items-center px-5 py-4"
+        >
           <div class="flex gap-3">
             <svg
               width="18"
@@ -202,7 +209,14 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/user-panel/advice"
+          :class="{
+            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
+              route.path.startsWith('/user-panel/advice')
+          }"
+          class="flex justify-between items-center px-5 py-4"
+        >
           <div class="flex gap-3">
             <svg
               width="18"
@@ -240,7 +254,14 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/user-panel/legal"
+          :class="{
+            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
+              route.path.startsWith('/user-panel/legal')
+          }"
+          class="flex justify-between items-center px-5 py-4 rounded-b"
+        >
           <div class="flex gap-3">
             <svg
               width="19"

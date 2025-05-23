@@ -11,7 +11,7 @@
             type="text"
             id="name"
             placeholder="وارد کنید"
-            class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+            class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
             v-model="userData.name"
           />
         </div>
@@ -21,7 +21,7 @@
             type="text"
             id="family-name"
             placeholder="وارد کنید"
-            class="block bg-[#F7F7F8] border border-gray-300 rounded p-3 w-full mt-2"
+            class="block bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3 w-full mt-2"
             v-model="userData.family"
           />
         </div>
@@ -33,13 +33,13 @@
               :options="genders"
               optionLabel="name"
               placeholder="انتخاب کنید"
-              class="w-full mt-2 rounded border border-gray-300 bg-[#F7F7F8]"
+              class="w-full mt-2 rounded border border-[#EFEFEF]"
               :pt="{
                 option: ({ context }) => ({
-                  class: context.selected ? 'bg-secondary text-white' : ''
+                  class: context.selected ? 'bg-secondary !text-white' : ''
                 }),
                 label: 'p-3 text-gray-400',
-                root: 'hover:border-gray-300'
+                root: 'hover:!border-[#EFEFEF] !bg-[#F7F7F8]'
               }"
             />
           </div>

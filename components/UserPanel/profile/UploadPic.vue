@@ -1,9 +1,15 @@
 <template>
   <div>
-    <input type="file" ref="fileInput" class="hidden" id="profile" @change="handleFile" />
+    <input
+      type="file"
+      ref="fileInput"
+      class="hidden"
+      id="profile"
+      @change="handleFile"
+    />
     <button
       @click="triggerFileInput"
-      class="font-bold text-[#0ABAB5] mt-2 border-2 border-dashed w-full flex justify-center items-center flex-col p-5 gap-1 rounded-xl border-gray-300 bg-[#F7F7F8]"
+      class="font-bold text-[#0ABAB5] mt-2 border-2 border-dashed w-full flex justify-center items-center flex-col p-5 gap-1 rounded-xl border-[#EFEFEF] bg-[#F7F7F8]"
     >
       <svg
         width="44"
