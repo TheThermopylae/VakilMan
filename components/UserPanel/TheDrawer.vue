@@ -136,7 +136,7 @@
         </div>
       </div>
       <ul class="mt-8 text-secondary font-bold">
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/dashboard"
             class="flex justify-between items-center px-5 py-4"
@@ -176,7 +176,7 @@
             </svg>
           </NuxtLink>
         </li>
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/profile/"
             :class="{
@@ -220,7 +220,7 @@
             </svg>
           </NuxtLink>
         </li>
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/orders"
             class="flex justify-between items-center px-5 py-4"
@@ -261,7 +261,7 @@
             </svg>
           </NuxtLink>
         </li>
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/comments"
             class="flex justify-between items-center px-5 py-4"
@@ -301,7 +301,7 @@
             </svg>
           </NuxtLink>
         </li>
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/advice"
             :class="{
@@ -346,7 +346,7 @@
             </svg>
           </NuxtLink>
         </li>
-        <li>
+        <li @click="visible = false">
           <NuxtLink
             to="/user-panel/legal"
             :class="{
@@ -397,3 +397,9 @@ const visible = ref(false)
 
 let route = useRoute()
 </script>
+
+<style scoped>
+ul li .router-link-active {
+  background: linear-gradient(to right, #fcc2653d, #f8b92600);
+}
+</style>
