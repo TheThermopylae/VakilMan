@@ -27,7 +27,7 @@
       v-model:visible="visible"
       header="داشبورد کاربری"
       position="right"
-      :pt="{ content: 'p-0' }"
+      :pt="{ content: '!p-0' }"
     >
       <div class="flex justify-between items-center px-3">
         <svg
