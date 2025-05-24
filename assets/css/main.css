@@ -10,12 +10,29 @@
     url('../../public/fonts/ttf/YekanBakhFaNum-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'YekanBakhFaNum-Bold';
+  src:
+    url('../../public/fonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2'),
+    url('../../public/fonts/woff/YekanBakhFaNum-Bold.woff') format('woff'),
+    url('../../public/fonts/ttf/YekanBakhFaNum-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PeydaWebFaNum-Medium';
+  src:
+    url('../../public/fonts/woff2/PeydaWebFaNum-Medium.woff2') format('woff2'),
+    url('../../public/fonts/woff/PeydaWebFaNum-Medium.woff') format('woff'),
+    url('../../public/fonts/ttf/PeydaWebFaNum-Medium.ttf') format('truetype');
+}
+
 body {
   background: #eeeeee7c;
 }
 
 * {
   outline: none;
+  font-family: 'YekanBakhFaNum-Regular';
 }
 
 .before-line {
@@ -45,4 +62,8 @@ body {
 
 .req {
   @apply after:content-['*'] after:text-red-500 after:font-bold
+}
+
+a {
+  @apply font-peyda
 }
