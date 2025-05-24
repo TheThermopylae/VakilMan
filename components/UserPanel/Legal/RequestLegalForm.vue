@@ -2,7 +2,7 @@
   <section class="p-5 rounded bg-white">
     <div class="pb-3 mb-3 border-b">
       <h1 class="font-bold text-xl mb-3">درخواست حقوقی جدید</h1>
-      <p class="text-[#706C6C]">
+      <p class="text-[#706C6C] text-sm">
         با تکمیل فرم زیر درخواست حقوقی خود را برای ما ارسال کنید
       </p>
     </div>

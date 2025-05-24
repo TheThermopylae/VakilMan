@@ -1,5 +1,5 @@
 <template>
-  <section class="xl:w-2/5 bg-white rounded p-5 mt-5 xl:m-0">
+  <section class="2xl:w-2/5 bg-white rounded p-5 mt-5 2xl:m-0">
     <div class="flex justify-between items-center mb-5">
       <h3 class="font-bold text-lg text-secondary">متخصصین برتر روز گذشته</h3>
       <svg
@@ -32,7 +32,7 @@
           <img src="/public/userpanel/law-profile.svg" alt="law-profile" />
           <div>
             <h5 class="mb-1">مهسا خاکپور</h5>
-            <p class="text-[11px] md:text-sm xl:text-[11px] 2xl:text-sm">وکیل پایه یک کانون وکلای دادگستری</p>
+            <p class="text-[10px] md:text-sm xl:text-sm 2xl:text-[12px]">وکیل پایه یک کانون وکلای دادگستری</p>
           </div>
         </div>
         <div class="flex gap-2 flex-col items-end">
@@ -42,7 +42,7 @@
           >
           <NuxtLink
             to="/"
-            class="text-gray-500 flex items-center gap-2 text-[11px] md:text-sm xl:text-[11px] 2xl:text-sm"
+            class="text-gray-500 flex items-center gap-2 text-[11px] md:text-sm xl:text-sm 2xl:text-[12px]"
           >
             اطلاعات بیشتر
             <svg

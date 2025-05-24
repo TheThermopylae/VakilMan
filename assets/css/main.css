@@ -67,3 +67,15 @@ body {
 a {
   @apply font-peyda
 }
+
+input {
+  @apply placeholder:text-gray-400
+}
+
+.p-select {
+  @apply hover:!border-[#EFEFEF] !bg-[#F7F7F8] !shadow-none
+}
+
+.p-select-label {
+  @apply !text-gray-400 !p-3
+}

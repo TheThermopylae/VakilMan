@@ -1,7 +1,7 @@
 <template>
   <section class="rounded bg-white p-5 mb-5">
-    <p class="font-bold text-xl">به نکات زیر توجه کنید :</p>
-    <ul class="list-disc pr-5 mt-2">
+    <p class="font-bold text-lg">به نکات زیر توجه کنید :</p>
+    <ul class="list-disc pr-5 mt-2 text-[17px]">
       <li class="mb-2">
         پرسش و پاسخ حقوقی آنلاین ماهیت مشاوره‌ای نداشته و صرفا جهت رفع ابهامات
         شما در خصوص خدمات و مسائل روزمره حقوقی شما است.

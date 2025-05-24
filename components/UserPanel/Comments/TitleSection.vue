@@ -36,7 +36,7 @@
         <Button
           label="افزودن دیدگاه"
           @click="visible = true"
-          class="bg-secondary py-2 px-6 rounded text-white"
+          class="bg-secondary py-2 px-6 rounded text-white [&_span]:font-peyda"
           unstyled
         />
         <Dialog

@@ -20,16 +20,15 @@
             fill="#CC8500"
           />
         </svg>
-
-        <h3 class="md:text-lg lg:text-sm xl:text-lg font-bold">
+        <h3 class="text-sm md:text-lg lg:text-sm xl:text-lg font-bold text-secondary">
           مشاوره های تلفنی
         </h3>
       </div>
       <NuxtLink
         to="/"
-        class="border border-primary text-primary px-2 py-1.5 rounded-md hover:bg-primary hover:text-white transition-all text-sm md:text-lg lg:text-sm xl:text-lg"
-        >درخواست مشاوره </NuxtLink
-      >
+        class="border border-primary text-primary px-2 py-1.5 rounded-md hover:bg-primary hover:text-white transition-all text-[12px]"
+        >درخواست مشاوره
+      </NuxtLink>
     </div>
     <div class="flex justify-between">
       <div
@@ -92,7 +91,7 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">تعداد کل</h4>
+          <h4 class="text-[13px] text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">تعداد کل</h4>
           10
         </div>
       </div>
@@ -116,7 +115,7 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">پاسخ داده شده</h4>
+          <h4 class="text-[13px] text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">پاسخ داده شده</h4>
           5
         </div>
       </div>
@@ -140,7 +139,7 @@
           </svg>
         </div>
         <div class="font-bold">
-          <h4 class="text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">نیازمند پاسخ</h4>
+          <h4 class="text-[13px] text-c-gray my-2 md:m-0 lg:my-2 xl:m-0">نیازمند پاسخ</h4>
           5
         </div>
       </div>

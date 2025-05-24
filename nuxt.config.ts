@@ -17,13 +17,6 @@ const MyPreset = definePreset(Aura, {
       950: '#001A46'
     },
   },
-  pt: {
-    button: {
-      root: {
-        class: 'border-0'
-      }
-    }
-  }
 })
 export default defineNuxtConfig({
   app: {
@@ -59,7 +52,7 @@ export default defineNuxtConfig({
           darkModeSelector: 'none',
           cssLayer: false,
         },
-      }
+      },
     },
   }
 })

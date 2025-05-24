@@ -38,8 +38,7 @@
                 option: ({ context }) => ({
                   class: context.selected ? 'bg-secondary !text-white' : ''
                 }),
-                label: 'p-3 text-gray-400',
-                root: 'hover:!border-[#EFEFEF] !bg-[#F7F7F8]'
+                root: 'hover:!border-[#EFEFEF] !shadow-none !bg-[#F7F7F8]'
               }"
             />
           </div>

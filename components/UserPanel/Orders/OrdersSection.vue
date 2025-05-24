@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white rounded p-5 pb-0 mt-5 overflow-hidden">
+  <section class="bg-white rounded p-5 pb-0 mt-5">
     <div class="md:flex gap-5 border-b pb3 mb-3">
       <div class="relative flex text-sm mt-3 md:m-0">
         <button
@@ -34,7 +34,7 @@
         </button>
       </div>
     </div>
-    <div class="flex-grow overflow-auto max-h-[400px]">
+    <div class="overflow-auto">
       <table class="min-w-[800px] w-full">
         <thead>
           <tr class="text-[#A5A5A5]">

@@ -2,7 +2,7 @@
   <section class="mt-5">
     <div class="bg-white rounded p-5">
       <h2 class="text-secondary mb-5 font-bold text-lg">اطلاعات عمومی</h2>
-      <p class="text-gray-500 border-b pb-5 mb-5">
+      <p class="text-gray-500 border-b pb-5 mb-5 text-sm">
         این اطلاعات محرمانه بوده و در سایت نمایش داده نمی‌شود و صرفا جهت دسترسی
         به شما و ارسال اعلانات و اطلاعیه‌ها استفاده خواهند شد.
       </p>

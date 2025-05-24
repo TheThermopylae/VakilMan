@@ -16,7 +16,7 @@
         </svg>
         احراز هویت دو مرحله‌ای
       </h2>
-      <p class="text-gray-500 border-b pb-5 mb-5">
+      <p class="text-gray-500 border-b pb-5 mb-5 text-sm">
         احراز هویت دو مرحله‌ای با الزام به ورود پارامتر دیگری علاوه بر کلمه عبور
         هنگام ورود به حساب کاربری، یک لایه امنیتی بیشتر به حساب کاربری شما اضافه
         می‌کند.
@@ -34,9 +34,7 @@
               :pt="{
                 option: ({ context }) => ({
                   class: context.selected ? 'bg-secondary !text-white' : ''
-                }),
-                label: 'p-3 text-gray-400',
-                root: 'hover:!border-[#EFEFEF] !bg-[#F7F7F8]'
+                })
               }"
             />
           </div>
