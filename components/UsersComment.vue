@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-secondary mt-32 text-white h-[350px] mb-72 relative">
+  <section class="mt-32 text-white h-[350px] mb-72 relative">
     <svg
       width="77"
       height="77"
@@ -147,6 +147,6 @@
 
 <style scoped>
 section {
-  background: url('/public/counseling/dotted-map.svg') top no-repeat;
+  background: url('/public/counseling/dotted-map.svg') #001a46 top no-repeat;
 }
 </style>

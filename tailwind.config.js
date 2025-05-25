@@ -24,12 +24,15 @@ module.exports = {
         secondary: '#001A46',
         tertiary: '#EAB250',
         quaternary: '#FFDDAB',
-        'c-gray': '#A0AEC0'
+        'c-gray': '#A0AEC0',
+        'c-gray-2': '#706C6C',
+        background : '#eeeeee7c'
       },
       fontFamily: {
         yekR: ['YekanBakhFaNum-Regular'],
         yekB: ['YekanBakhFaNum-Bold'],
-        peyda: ['PeydaWebFaNum-Medium'],
+        yekSB: ['YekanBakhFaNum-SemiBold'],
+        peyda: ['PeydaWebFaNum-Medium']
       }
     }
   },

@@ -15,14 +15,14 @@
         <li><NuxtLink to="/">صفحه ی اصلی</NuxtLink></li>
         <li><NuxtLink to="/counseling">مشاوره آنلاین</NuxtLink></li>
         <li>مشاوره تلفنی</li>
-       <li><NuxtLink to="/contact-us">تماس با ما</NuxtLink></li>
+        <li><NuxtLink to="/contact-us">تماس با ما</NuxtLink></li>
         <li><NuxtLink to="/about-us">درباره ی ما</NuxtLink></li>
       </ul>
     </div>
     <div class="hidden lg:block">
-      <nuxtLink to="/">ورود</nuxtLink>
+      <nuxtLink to="/admin-panel/dashboard">ورود</nuxtLink>
       <nuxtLink
-        to="/user-panel/"
+        to="/user-panel/dashboard"
         class="mr-7 bg-primary px-12 py-2.5 rounded-md text-black"
         >عضویت</nuxtLink
       >
