@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white rounded p-5">
+  <section class="bg-white rounded p-5 my-5">
     <div class="pb-4 mb-4 border-b">
       <h2 class="text-secondary text-lg">اطلاعات عمومی</h2>
       <p class="text-c-gray-2 mt-4 text-sm">
@@ -7,7 +7,7 @@
         به شما و ارسال اعلانات و اطلاعیه‌ها استفاده خواهند شد.
       </p>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
       <div>
         <label for="name" class="req">نام : </label>
         <input type="text" id="name" class="cinput" placeholder="وارد کنید" />

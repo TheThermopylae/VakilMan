@@ -1,6 +1,6 @@
 <template>
   <article
-    class="bg-[#001A46] rounded-3xl text-white text-center relative overflow-hidden xl:h-[700px] 2xl:h-auto"
+class="bg-[#001A46] rounded-3xl text-white text-center relative overflow-hidden xl:h-[700px] 2xl:h-auto"
   >
     <div class="p-8 pb-0 z-20 relative">
       <h3 class="text-xl font-bold mb-6">مشاوره حقوقی تلفنی</h3>
@@ -31,7 +31,7 @@
             />
           </svg>
 
-          <p class="text-black text-sm lg:text-lg xl:text-sm 2xl:text-lg">مشاوره حقوقی آنلاین</p>
+          <p class="text-black text-sm lg:text-lg xl:text-sm">مشاوره حقوقی آنلاین</p>
         </div>
         <div class="flex gap-2 mb-4">
           <svg
@@ -49,7 +49,7 @@
             />
           </svg>
 
-          <p class="text-black text-sm lg:text-lg xl:text-sm 2xl:text-lg">گفتگو با وکلای آنلاین بدون محدودیت</p>
+          <p class="text-black text-sm lg:text-lg xl:text-sm">گفتگو با وکلای آنلاین بدون محدودیت</p>
         </div>
         <div class="flex gap-2 mb-4">
           <svg
@@ -67,7 +67,7 @@
             />
           </svg>
 
-          <p class="text-black text-sm lg:text-lg xl:text-sm 2xl:text-lg">امکان ارسال مدارک و تصاویر</p>
+          <p class="text-black text-sm lg:text-lg xl:text-sm">امکان ارسال مدارک و تصاویر</p>
         </div>
         <div class="flex gap-2 mb-4">
           <svg
@@ -85,7 +85,7 @@
             />
           </svg>
 
-          <p class="text-black text-sm lg:text-lg xl:text-sm 2xl:text-lg">امکان ارسال پیام صوتی</p>
+          <p class="text-black text-sm lg:text-lg xl:text-sm">امکان ارسال پیام صوتی</p>
         </div>
         <div class="flex gap-2">
           <svg
@@ -103,7 +103,7 @@
             />
           </svg>
 
-          <p class="text-black text-sm lg:text-lg xl:text-sm 2xl:text-lg">شروع گفتگو بلافاصله پس از رزرو</p>
+          <p class="text-black text-sm lg:text-lg xl:text-sm">شروع گفتگو بلافاصله پس از رزرو</p>
         </div>
         <NuxtLink
           to="/"

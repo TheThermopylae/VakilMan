@@ -9,7 +9,7 @@
     />
     <button
       @click="triggerFileInput"
-      class="flex justify-between items-center w-full bg-[#0ABAB50F] text-[#0ABAB5] border-2 border-dashed border-[#0ABAB54D] rounded p-[10.5px] mt-2"
+      class=" flex justify-between items-center w-full bg-[#0ABAB50F] text-[#0ABAB5] border-2 border-dashed border-[#0ABAB54D] rounded p-[10.5px] mt-2"
     >
       <span></span>
       بارگذاری تصویر پروفایل

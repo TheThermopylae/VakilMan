@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-5">
+  <section>
     <h1 class="font-yekB text-[22px]">افزودن وکیل</h1>
     <div class="md:flex justify-between mt-2">
       <p class="text-c-gray-2 mb-2 md:m-0">در این قسمت شما میتوانید وکلای جدید را اضافه کنید</p>
