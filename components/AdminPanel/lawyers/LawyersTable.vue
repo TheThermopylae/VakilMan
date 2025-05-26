@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-auto">
+  <div class="overflow-auto min-h-[500px]">
     <table
       class="min-w-[800px] w-full table-auto border-separate border-spacing-y-4"
     >
@@ -11,7 +11,7 @@
           <th class="font-thin py-3">شماره موبایل</th>
           <th class="font-thin py-3">وضعیت</th>
           <th class="font-thin py-3"></th>
-          <th class="font-thin py-3 rounded-l">عملیات</th>
+          <th class="font-thin py-3 rounded-l !text-right">عملیات</th>
         </tr>
       </thead>
       <tbody>
@@ -43,7 +43,7 @@
           </td>
           <td class="py-3 px-4">09123812637</td>
           <td class="py-3 px-4">
-            <span class="bg-[#3A974C]/10 text-[#3A974C] px-4 py-1 rounded">
+            <span class="bg-[#3A974C]/10 text-[#3A974C] px-4 py-1 rounded text-[12px]">
               احراز هویت شده
             </span>
           </td>
@@ -76,29 +76,8 @@
               />
             </svg>
           </td>
-          <td class="py-3 px-4 rounded-l">
-            <svg
-              width="15"
-              height="4"
-              viewBox="0 0 15 4"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="block m-auto"
-            >
-              <path
-                d="M14.2843 0.512567C13.6009 -0.170848 12.4929 -0.170848 11.8094 0.512567C11.126 1.19598 11.126 2.30402 11.8094 2.98744C12.4929 3.67085 13.6009 3.67085 14.2843 2.98744C14.9677 2.30405 14.9677 1.19601 14.2843 0.512567Z"
-                fill="#001A46"
-              />
-              <path
-                d="M9.03431 0.512567C8.3509 -0.170848 7.24286 -0.170848 6.55944 0.512567C5.87603 1.19598 5.87603 2.30402 6.55944 2.98744C7.24286 3.67085 8.3509 3.67085 9.03431 2.98744C9.71773 2.30405 9.71773 1.19601 9.03431 0.512567Z"
-                fill="#001A46"
-              />
-              <path
-                d="M3.78431 0.512567C3.1009 -0.170848 1.99285 -0.170848 1.30944 0.512567C0.626023 1.19598 0.626023 2.30402 1.30944 2.98744C1.99285 3.67085 3.1009 3.67085 3.78431 2.98744C4.46773 2.30405 4.46773 1.19601 3.78431 0.512567Z"
-                fill="#001A46"
-              />
-            </svg>
-          </td>
+
+          <AdminPanelLawyersActionCol />
         </tr>
       </tbody>
     </table>

@@ -1,17 +1,17 @@
 <template>
-  <section class="flex justify-between items-end mb-5">
-    <div class="">
+  <section class="2xl:flex justify-between items-end mb-5">
+    <div class="mb-3 2xl:m-0">
       <h1 class="text-2xl font-yekSB mb-2">مدیریت وکلا</h1>
       <p class="text-c-gray-2">
         در این قسمت لیست وکلای وکیل من را میتوانید مشاهده کنید
       </p>
     </div>
-    <div class="flex  gap-2">
-      <div class="relative">
+    <div class="md:flex gap-2">
+      <div class="relative flex-grow">
         <input
           type="text"
           id="search-lawyer"
-          class="py-2 px-3 border rounded w-full md:w-72"
+          class="py-2 px-3 border rounded w-full 2xl:w-72"
           placeholder="جستجو"
         />
         <svg
@@ -38,7 +38,9 @@
           </g>
         </svg>
       </div>
-      <NuxtLink to="/admin-panel/lawyers/add" class="dash-btn">افزودن وکیل</NuxtLink>
+      <NuxtLink to="/admin-panel/lawyers/add" class="dash-btn mt-3 md:m-0 inline-block"
+        >افزودن وکیل</NuxtLink
+      >
     </div>
   </section>
 </template>

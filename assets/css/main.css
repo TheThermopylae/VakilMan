@@ -89,9 +89,17 @@ input {
 }
 
 .p-select-label {
-  @apply !text-gray-400 !p-3
+  @apply !text-gray-400 !p-3.5
 }
 
 .dash-btn {
   @apply bg-secondary text-white rounded px-6 py-2
+}
+
+.cinput {
+  @apply bg-[#F7F7F8] border border-[#EFEFEF] rounded p-3.5 block mt-2 w-full
+}
+
+label {
+  @apply text-c-gray-2
 }

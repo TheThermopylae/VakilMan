@@ -1,3 +1,4 @@
 <template>
-    add
+  <AdminPanelLawyersAddTitleSection></AdminPanelLawyersAddTitleSection>
+  <AdminPanelLawyersGeneralInformation />
 </template>
