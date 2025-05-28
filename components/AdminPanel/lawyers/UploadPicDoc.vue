@@ -9,7 +9,7 @@
     />
     <button
       @click="triggerFileInput"
-      class="flex justify-between items-center w-full bg-[#F7F7F8] text-gray-400 border-2 border-dashed border-[#EFEFEF] rounded p-[10.5px] mt-2"
+      class="flex justify-between items-center w-full bg-[#F7F7F8] text-gray-400 border-2 border-dashed border-[#EFEFEF] rounded p-3.5 mt-2"
     >
       آپلود کنید
       <svg

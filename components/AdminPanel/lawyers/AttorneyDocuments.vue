@@ -58,10 +58,7 @@
         <AdminPanelLawyersUploadPicDoc />
       </div>
     </form>
-    <div class="flex flex-col md:flex-row justify-end gap-2 mt-10">
-      <button class="cancel-btn  md:w-[173px]">لغو</button>
-      <button class="dash-btn  md:w-[173px]">تایید و ارسال</button>
-    </div>
+
   </section>
 </template>
 

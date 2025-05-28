@@ -10,7 +10,13 @@
     <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
       <div>
         <label for="name" class="req">نام : </label>
-        <input type="text" id="name" class="cinput" placeholder="وارد کنید" />
+        <input
+          type="text"
+          id="name"
+          class="cinput"
+          placeholder="وارد کنید"
+          v-model="props.data.firstName"
+        />
       </div>
       <div>
         <label for="last-name" class="req">نام خانوادگی : </label>
@@ -19,15 +25,15 @@
           id="last-name"
           class="cinput"
           placeholder="وارد کنید"
+          v-model="props.data.lasttName"
         />
       </div>
       <div>
         <label>جنسبیت : </label>
         <div class="card flex justify-center">
           <Select
-            v-model="data.gender"
+            v-model="props.data.gender"
             :options="genders"
-            optionLabel="name"
             placeholder="انتخاب کنید"
             class="w-full mt-2 rounded border border-[#EFEFEF]"
             :pt="{
@@ -46,6 +52,7 @@
           id="father-name"
           class="cinput"
           placeholder="وارد کنید"
+          v-model="props.data.fatherName"
         />
       </div>
       <div>
@@ -55,6 +62,7 @@
           id="birthday-city"
           class="cinput"
           placeholder="وارد کنید"
+          v-model="props.data.bitrthDayCity"
         />
       </div>
       <div>
@@ -64,15 +72,15 @@
           id="code-meli"
           class="cinput"
           placeholder="وارد کنید"
+          v-model="props.data.codeMeli"
         />
       </div>
       <div>
         <label>استان محل سکونت : </label>
         <div class="card flex justify-center">
           <Select
-            v-model="data.gender"
+            v-model="props.data.stateLive"
             :options="states"
-            optionLabel="name"
             placeholder="انتخاب کنید"
             class="w-full mt-2 rounded border border-[#EFEFEF]"
             :pt="{
@@ -88,9 +96,8 @@
         <label>شهر محل سکونت : </label>
         <div class="card flex justify-center">
           <Select
-            v-model="data.gender"
+            v-model="props.data.cityLive"
             :options="cities"
-            optionLabel="name"
             placeholder="انتخاب کنید"
             class="w-full mt-2 rounded border border-[#EFEFEF]"
             :pt="{
@@ -111,19 +118,9 @@
 </template>
 
 <script setup>
-let genders = ref([{ name: 'مذکر' }, { name: 'مونث' }, { name: 'دو جنسه' }])
-let states = ref([{ name: 'تهران' }, { name: 'فارس' }, { name: 'اصفهان' }])
-let cities = ref([{ name: 'تهران' }, { name: 'شیراز' }, { name: 'اصفهان' }])
+let genders = ref(['مذکر', 'مونث', 'دو جنسه'])
+let states = ref(['تهران', 'فارس', 'اصفهان'])
+let cities = ref(['تهران', 'شیراز', 'اصفهان'])
 
-let data = reactive({
-  firstName: '',
-  lastName: '',
-  gender: '',
-  fatherName: '',
-  bitrthDayCity: '',
-  codeMeli: '',
-  cityLive: '',
-  stateLive: '',
-  profile: ''
-})
+let props = defineProps(['data'])
 </script>
