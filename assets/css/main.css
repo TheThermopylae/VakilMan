@@ -85,7 +85,7 @@ input {
 }
 
 .p-select {
-  @apply hover:!border-[#EFEFEF] !bg-[#F7F7F8] !shadow-none
+  @apply hover:!border-[#EFEFEF] !bg-[#F7F7F8] !shadow-none !border-[#EFEFEF]
 }
 
 .p-select-label {
