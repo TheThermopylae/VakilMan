@@ -1,14 +1,14 @@
 <template>
   <section class="bg-white rounded p-5 my-5">
     <div class="pb-4 mb-4 border-b">
-      <h2 class="text-secondary text-lg">مدارک وکالت</h2>
+      <h2 class="text-secondary text-lg">مدارک کارشناسی</h2>
       <p class="text-c-gray-2 mt-4 text-sm">
-        مدارک هویتی وکالت خود را در این قسمت قرار دهید
+        مدارک هویتی کارشناسی خود را در این قسمت قرار دهید
       </p>
     </div>
     <form @submi.prevent class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
       <div>
-        <label for="attorney-code" class="req">شماره پروانه وکالت : </label>
+        <label for="attorney-code" class="req">شماره پرونده کارشناسی : </label>
         <input
           v-model="data.email"
           type="email"
@@ -18,7 +18,7 @@
         />
       </div>
       <div>
-        <label for="repeat-email" class="req">استان محل وکالت : </label>
+        <label for="repeat-email" class="req">استان محل فعالیت : </label>
         <div class="card flex justify-center">
           <Select
             v-model="data.email"
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div>
-        <label for="repeat-email" class="req">شهر محل وکالت : </label>
+        <label for="repeat-email" class="req">شهر محل فعالیت : </label>
         <div class="card flex justify-center">
           <Select
             v-model="data.email"

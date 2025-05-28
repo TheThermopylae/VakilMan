@@ -1,9 +1,9 @@
 <template>
   <section class="2xl:flex justify-between items-end mb-5">
     <div class="mb-3 2xl:m-0">
-      <h1 class="text-2xl font-yekSB mb-2">مدیریت وکلا</h1>
+      <h1 class="text-2xl font-yekSB mb-2">مدیریت کارشناسان</h1>
       <p class="text-c-gray-2">
-        در این قسمت لیست وکلای وکیل من را میتوانید مشاهده کنید
+        در این قسمت لیست کارشناسان وکیل من را میتوانید مشاهده کنید
       </p>
     </div>
     <div class="md:flex gap-2">
@@ -39,7 +39,7 @@
         </svg>
       </div>
       <NuxtLink
-        to="/admin-panel/lawyers/add"
+        to="/admin-panel/experts/add"
         class="dash-btn mt-3 md:m-0 inline-block font-thin"
       >
         <svg
@@ -56,7 +56,8 @@
             clip-rule="evenodd"
           />
         </svg>
-        افزودن وکیل
+
+        افزودن کارشناس
       </NuxtLink>
     </div>
   </section>

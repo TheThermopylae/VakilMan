@@ -95,7 +95,14 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/admin-panel/experts"
+          :class="{
+            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
+              route.path.startsWith('/admin-panel/experts')
+          }"
+          class="flex justify-between items-center px-5 py-4"
+        >
           <div class="flex gap-3">
             <svg
               width="17"
