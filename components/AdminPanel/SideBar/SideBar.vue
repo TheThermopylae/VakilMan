@@ -199,11 +199,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/"
-          :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
-              route.path.startsWith('/admin-panel/advice')
-          }"
+          to="/admin-panel/legal-requests"
           class="flex justify-between items-center px-5 py-4"
         >
           <div class="flex gap-3">
@@ -241,10 +237,6 @@
       <li>
         <NuxtLink
           to="/"
-          :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
-              route.path.startsWith('/admin-panel/legal')
-          }"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
           <div class="flex gap-3">
@@ -286,10 +278,6 @@
       <li>
         <NuxtLink
           to="/"
-          :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
-              route.path.startsWith('/admin-panel/legal')
-          }"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
           <div class="flex gap-3">
@@ -339,10 +327,6 @@
       <li>
         <NuxtLink
           to="/"
-          :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
-              route.path.startsWith('/admin-panel/legal')
-          }"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
           <div class="flex gap-3">
@@ -380,10 +364,6 @@
       <li>
         <NuxtLink
           to="/admin-panel/articles"
-          :class="{
-            'bg-gradient-to-r from-[#fcc2653d] to-[#f8b92600]':
-              route.path.startsWith('/admin-panel/legal')
-          }"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
           <div class="flex gap-3">
