@@ -60,7 +60,7 @@
           }"
           class="flex justify-between items-center px-5 py-4"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="19"
               height="19"
@@ -103,7 +103,7 @@
           }"
           class="flex justify-between items-center px-5 py-4"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="17"
               height="19"
@@ -137,7 +137,7 @@
       </li>
       <li>
         <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="19"
               height="18"
@@ -202,7 +202,7 @@
           to="/admin-panel/legal-requests"
           class="flex justify-between items-center px-5 py-4"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="19"
               height="19"
@@ -239,7 +239,7 @@
           to="/"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="19"
               height="18"
@@ -280,7 +280,7 @@
           to="/"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="17"
               height="13"
@@ -329,7 +329,7 @@
           to="/"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="17"
               height="14"
@@ -366,7 +366,7 @@
           to="/admin-panel/articles"
           class="flex justify-between items-center px-5 py-4 rounded-b"
         >
-          <div class="flex gap-3">
+          <div class="flex gap-3 font-peyda">
             <svg
               width="17"
               height="14"
