@@ -1,7 +1,9 @@
 <template>
   <div class="card lg:hidden container m-auto mt-5">
     <div class="flex justify-between items-center">
-      <img src="/logo.svg" alt="" />
+      <NuxtLink to="/">
+        <img src="/logo.svg" alt="logo" />
+      </NuxtLink>
       <Button
         icon="pi pi-arrow-left"
         class="flex"
