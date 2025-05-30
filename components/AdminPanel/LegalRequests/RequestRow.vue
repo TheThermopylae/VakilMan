@@ -171,28 +171,41 @@
           </div>
           <h4 class="mt-5 mb-2 text-secondary">ارجاع درخواست به وکیل :</h4>
           <div class="grid md:grid-cols-3 gap-3">
-            <button class="text-white bg-[#605BFF] flex items-center justify-center gap-5 p-3 rounded relative text-center">
-              <svg
-                width="19"
-                height="13"
-                viewBox="0 0 19 13"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="absolute right-3"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M13.1987 3.43921C13.1987 5.34833 11.6661 6.87915 9.75478 6.87915C7.84342 6.87915 6.31081 5.34833 6.31081 3.43921C6.31081 1.52935 7.84342 0 9.75478 0C11.6661 0 13.1987 1.52935 13.1987 3.43921ZM9.75519 12.9998C6.94786 12.9998 4.55078 12.5578 4.55078 10.79C4.55078 9.02132 6.93247 8.56325 9.75519 8.56325C12.5625 8.56325 14.9596 9.00522 14.9596 10.7739C14.9596 12.5418 12.5779 12.9998 9.75519 12.9998ZM14.6709 3.50139C14.6709 4.47461 14.3786 5.38125 13.8657 6.13494C13.813 6.21251 13.8599 6.31715 13.9529 6.33325C14.0811 6.3552 14.2137 6.36764 14.3485 6.3713C15.6929 6.40642 16.8995 5.54223 17.2328 4.24118C17.7266 2.30864 16.2767 0.573672 14.4306 0.573672C14.2298 0.573672 14.0379 0.594893 13.8511 0.632944C13.8255 0.638798 13.7983 0.650506 13.7837 0.67319C13.7661 0.700996 13.7793 0.738315 13.7969 0.762463C14.3515 1.53885 14.6709 2.48573 14.6709 3.50139ZM16.8972 7.72879C17.8005 7.90514 18.3946 8.26516 18.6408 8.78836C18.8488 9.2179 18.8488 9.71622 18.6408 10.145C18.2642 10.9565 17.0503 11.217 16.5785 11.2843C16.481 11.299 16.4027 11.2148 16.4129 11.1175C16.6539 8.86885 14.7367 7.8027 14.2407 7.55756C14.2195 7.54659 14.2151 7.52976 14.2173 7.51951C14.2188 7.5122 14.2276 7.50049 14.2437 7.49829C15.3169 7.47853 16.4708 7.62488 16.8972 7.72879ZM5.24473 6.37081C5.37953 6.36715 5.5114 6.35545 5.64034 6.33276C5.73338 6.31666 5.78026 6.21202 5.72752 6.13446C5.21469 5.38076 4.92239 4.47413 4.92239 3.5009C4.92239 2.48524 5.2418 1.53836 5.79638 0.761978C5.81396 0.73783 5.82642 0.700511 5.80957 0.672705C5.79491 0.650752 5.76708 0.638313 5.74217 0.632459C5.55462 0.594408 5.36268 0.573187 5.16195 0.573187C3.31579 0.573187 1.86597 2.30816 2.36048 4.2407C2.69381 5.54174 3.90041 6.40594 5.24473 6.37081ZM5.37619 7.51927C5.37839 7.53024 5.37399 7.54634 5.35348 7.55805C4.85677 7.80318 2.93955 8.86934 3.18058 11.1173C3.19084 11.2153 3.11318 11.2987 3.01574 11.2848C2.54395 11.2175 1.33003 10.957 0.953469 10.1455C0.744677 9.71597 0.744677 9.21838 0.953469 8.78885C1.19962 8.26565 1.79303 7.90563 2.69633 7.72855C3.12344 7.62537 4.27655 7.47902 5.35055 7.49878C5.36666 7.50097 5.37472 7.51268 5.37619 7.51927Z"
-                  fill="white"
-                />
-              </svg>
-              انتخاب وکیل
-            </button>
+            <Select
+              :pt="{
+                option: ({ context }) => ({
+                  class: context.selected ? 'bg-secondary !text-white' : ''
+                })
+              }"
+              :emptyFilterMessage="'وکیلی یافت نشد'"
+              v-model="selectedLawyer"
+              :options="lawyers"
+              filter
+              placeholder="انتخاب وکیل"
+              class="w-full"
+            >
+              <template #value="slotProps">
+                <div v-if="slotProps.value" class="flex items-center">
+                  <div>{{ slotProps.value }}</div>
+                </div>
+                <span v-else>
+                  {{ slotProps.placeholder }}
+                </span>
+              </template>
+              <template #option="slotProps">
+                <div class="flex items-center">
+                  <div>{{ slotProps.option }}</div>
+                </div>
+              </template>
+            </Select>
           </div>
           <div class="grid grid-cols-2 md:flex justify-end mt-7 gap-3">
-            <button class="cancel-btn min-w-[150px]" @click="visible = false">لغو</button>
-            <button class="dash-btn min-w-[150px]">تایید و ارسال</button>
+            <button class="cancel-btn min-w-[150px]" @click="visible = false">
+              لغو
+            </button>
+            <button class="dash-btn min-w-[150px]" @click="acceptRequestFunc">
+              تایید و ارسال
+            </button>
           </div>
         </Dialog>
       </div>
@@ -217,33 +230,229 @@
           fill="#4BAE4F"
         />
       </svg>
-      <svg
-        class="inline-block cursor-pointer"
-        width="30"
-        height="29"
-        viewBox="0 0 30 29"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="0.796875"
-          width="29"
+      <Button @click="visibleRemove = true" unstyled>
+        <svg
+          class="inline-block cursor-pointer"
+          width="30"
           height="29"
-          rx="4"
-          fill="#EE404C"
-          fill-opacity="0.12"
-        />
-        <path
-          d="M10.2194 19.5774C10.3514 19.7113 10.5087 19.8176 10.6821 19.8901C10.8556 19.9626 11.0417 20 11.2297 20C11.4176 20 11.6038 19.9626 11.7772 19.8901C11.9506 19.8176 12.1079 19.7113 12.2399 19.5774L15.2989 16.5184L18.358 19.5774C18.6259 19.8454 18.9893 19.9959 19.3682 19.9959C19.7471 19.9959 20.1105 19.8454 20.3784 19.5774C20.6464 19.3095 20.7969 18.9461 20.7969 18.5672C20.7969 18.1883 20.6464 17.8249 20.3784 17.557L17.3194 14.4979L20.3784 11.4389C20.5111 11.3062 20.6163 11.1487 20.6881 10.9754C20.7599 10.8021 20.7969 10.6163 20.7969 10.4287C20.7969 10.2411 20.7599 10.0553 20.6881 9.88194C20.6163 9.70861 20.5111 9.55111 20.3784 9.41845C20.2458 9.28578 20.0883 9.18055 19.9149 9.10875C19.7416 9.03695 19.5558 9 19.3682 9C19.1806 9 18.9948 9.03695 18.8215 9.10875C18.6481 9.18055 18.4906 9.28578 18.358 9.41845L15.2989 12.4775L12.2399 9.41845C12.1072 9.28578 11.9497 9.18055 11.7764 9.10875C11.6031 9.03695 11.4173 9 11.2297 9C11.042 9 10.8563 9.03695 10.6829 9.10875C10.5096 9.18055 10.3521 9.28578 10.2194 9.41845C10.0868 9.55111 9.98154 9.70861 9.90974 9.88194C9.83794 10.0553 9.80099 10.2411 9.80099 10.4287C9.80099 10.6163 9.83794 10.8021 9.90974 10.9754C9.98154 11.1487 10.0868 11.3062 10.2194 11.4389L13.2785 14.4979L10.2194 17.557C10.0856 17.689 9.97931 17.8463 9.90677 18.0197C9.83423 18.1931 9.79688 18.3792 9.79688 18.5672C9.79688 18.7552 9.83423 18.9413 9.90677 19.1147C9.97931 19.2882 10.0856 19.4454 10.2194 19.5774Z"
-          fill="#EE404C"
-        />
-      </svg>
+          viewBox="0 0 30 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.796875"
+            width="29"
+            height="29"
+            rx="4"
+            fill="#EE404C"
+            fill-opacity="0.12"
+          />
+          <path
+            d="M10.2194 19.5774C10.3514 19.7113 10.5087 19.8176 10.6821 19.8901C10.8556 19.9626 11.0417 20 11.2297 20C11.4176 20 11.6038 19.9626 11.7772 19.8901C11.9506 19.8176 12.1079 19.7113 12.2399 19.5774L15.2989 16.5184L18.358 19.5774C18.6259 19.8454 18.9893 19.9959 19.3682 19.9959C19.7471 19.9959 20.1105 19.8454 20.3784 19.5774C20.6464 19.3095 20.7969 18.9461 20.7969 18.5672C20.7969 18.1883 20.6464 17.8249 20.3784 17.557L17.3194 14.4979L20.3784 11.4389C20.5111 11.3062 20.6163 11.1487 20.6881 10.9754C20.7599 10.8021 20.7969 10.6163 20.7969 10.4287C20.7969 10.2411 20.7599 10.0553 20.6881 9.88194C20.6163 9.70861 20.5111 9.55111 20.3784 9.41845C20.2458 9.28578 20.0883 9.18055 19.9149 9.10875C19.7416 9.03695 19.5558 9 19.3682 9C19.1806 9 18.9948 9.03695 18.8215 9.10875C18.6481 9.18055 18.4906 9.28578 18.358 9.41845L15.2989 12.4775L12.2399 9.41845C12.1072 9.28578 11.9497 9.18055 11.7764 9.10875C11.6031 9.03695 11.4173 9 11.2297 9C11.042 9 10.8563 9.03695 10.6829 9.10875C10.5096 9.18055 10.3521 9.28578 10.2194 9.41845C10.0868 9.55111 9.98154 9.70861 9.90974 9.88194C9.83794 10.0553 9.80099 10.2411 9.80099 10.4287C9.80099 10.6163 9.83794 10.8021 9.90974 10.9754C9.98154 11.1487 10.0868 11.3062 10.2194 11.4389L13.2785 14.4979L10.2194 17.557C10.0856 17.689 9.97931 17.8463 9.90677 18.0197C9.83423 18.1931 9.79688 18.3792 9.79688 18.5672C9.79688 18.7552 9.83423 18.9413 9.90677 19.1147C9.97931 19.2882 10.0856 19.4454 10.2194 19.5774Z"
+            fill="#EE404C"
+          />
+        </svg>
+      </Button>
+      <Dialog
+        v-model:visible="visibleRemove"
+        modal
+        header="رد درخواست"
+        class="w-11/12 max-w-[400px] text-secondary"
+      >
+        <template #closebutton>
+          <svg
+            @click="visible = false"
+            class="cursor-pointer"
+            width="41"
+            height="40"
+            viewBox="0 0 41 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle opacity="0.05" cx="20.7969" cy="20" r="20" fill="#E71D36" />
+            <path
+              opacity="0.8"
+              d="M21.713 19.9999L25.6068 23.8939C25.8602 24.1472 25.8602 24.5567 25.6068 24.81C25.3535 25.0633 24.944 25.0633 24.6907 24.81L20.7968 20.916L16.903 24.81C16.6496 25.0633 16.2402 25.0633 15.9869 24.81C15.7335 24.5567 15.7335 24.1472 15.9869 23.8939L19.8807 19.9999L15.9869 16.1059C15.7335 15.8526 15.7335 15.4431 15.9869 15.1898C16.1132 15.0635 16.2791 15 16.445 15C16.6108 15 16.7767 15.0635 16.903 15.1898L20.7968 19.0838L24.6907 15.1898C24.8171 15.0635 24.9829 15 25.1488 15C25.3146 15 25.4805 15.0635 25.6068 15.1898C25.8602 15.4431 25.8602 15.8526 25.6068 16.1059L21.713 19.9999Z"
+              fill="#E71D36"
+            />
+          </svg>
+        </template>
+        <span class="text-surface-500 dark:text-surface-400 block mb-8"
+          >آیا میخواهید این درخواست را رد کنید؟</span
+        >
+        <div class="grid grid-cols-2 md:flex justify-end mt-7 gap-3">
+          <button
+            class="cancel-btn min-w-[150px]"
+            @click="visibleRemove = false"
+          >
+            خیر
+          </button>
+          <button class="dash-btn min-w-[150px]" @click="removeRequest">
+            بله
+          </button>
+        </div>
+      </Dialog>
     </td>
+    <Dialog
+      pt:header="hidden"
+      v-model:visible="visibleAccepted"
+      modal
+      :close-icon="'dwada'"
+      class="w-11/12 max-w-[510px] text-secondary"
+    >
+      <h3
+        class="flex justify-center items-center gap-2 mt-5 text-[#07C98F] text-2xl"
+      >
+        <svg
+          width="27"
+          height="27"
+          viewBox="0 0 27 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.6453 11.8725L23.8886 9.83164C23.5528 9.44414 23.2815 8.72081 23.2815 8.20414V6.00831C23.2815 4.63914 22.1578 3.51539 20.7886 3.51539H18.5928C18.089 3.51539 17.3528 3.24414 16.9653 2.90831L14.9244 1.15164C14.0332 0.389557 12.5736 0.389557 11.6694 1.15164L9.64151 2.92122C9.25401 3.24414 8.51776 3.51539 8.01401 3.51539H5.77943C4.41026 3.51539 3.28651 4.63914 3.28651 6.00831V8.21706C3.28651 8.72081 3.01526 9.44414 2.69234 9.83164L0.948594 11.8854C0.199427 12.7766 0.199427 14.2233 0.948594 15.1146L2.69234 17.1683C3.01526 17.5558 3.28651 18.2791 3.28651 18.7829V20.9916C3.28651 22.3608 4.41026 23.4846 5.77943 23.4846H8.01401C8.51776 23.4846 9.25401 23.7558 9.64151 24.0916L11.6823 25.8483C12.5736 26.6104 14.0332 26.6104 14.9373 25.8483L16.9782 24.0916C17.3657 23.7558 18.089 23.4846 18.6057 23.4846H20.8015C22.1707 23.4846 23.2944 22.3608 23.2944 20.9916V18.7958C23.2944 18.2921 23.5657 17.5558 23.9015 17.1683L25.6582 15.1275C26.4073 14.2362 26.4073 12.7637 25.6453 11.8725ZM18.6703 11.0587L12.4315 17.2975C12.2499 17.4789 12.0036 17.5808 11.7469 17.5808C11.4902 17.5808 11.244 17.4789 11.0623 17.2975L7.93651 14.1716C7.56193 13.7971 7.56193 13.1771 7.93651 12.8025C8.31109 12.4279 8.93109 12.4279 9.30568 12.8025L11.7469 15.2437L17.3011 9.68956C17.6757 9.31497 18.2957 9.31497 18.6703 9.68956C19.0448 10.0641 19.0448 10.6841 18.6703 11.0587Z"
+            fill="url(#paint0_linear_1_10239)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_10239"
+              x1="13.3021"
+              y1="0.580724"
+              x2="13.3021"
+              y2="26.4205"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#06CE92" />
+              <stop offset="1" stop-color="#08BA84" />
+            </linearGradient>
+          </defs>
+        </svg>
+        موفق
+      </h3>
+      <p class="text-center my-4">
+        درخواست مشاوره با موفقیت برای وکیل مورد نظر ارسال شد .
+      </p>
+      <div
+        class="bg-[#FAFAFB] border border-[#EFEFEF] p-3 rounded flex justify-between"
+      >
+        <div class="flex gap-2">
+          <svg
+            width="58"
+            height="57"
+            viewBox="0 0 58 57"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect
+              x="0.796875"
+              width="57"
+              height="57"
+              rx="6"
+              fill="url(#pattern0_1_10226)"
+            />
+            <defs>
+              <pattern
+                id="pattern0_1_10226"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_1_10226"
+                  transform="scale(0.00833333)"
+                />
+              </pattern>
+              <image
+                id="image0_1_10226"
+                width="120"
+                height="120"
+                preserveAspectRatio="none"
+                xlink:href="data:image/jpeg;base64,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"
+              />
+            </defs>
+          </svg>
+          <div class="text-lg text-black flex flex-col justify-between">
+            {{ selectedLawyer }}
+            <span class="block text-xs">وکیل پایه یک کانون وکلای دادگستری</span>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between items-end">
+          <span
+            class="py-0.5 w-[37px] text-center bg-[#06CE92] text-white rounded text-sm"
+            >4,9</span
+          >
+          <NuxtLink
+            to="/"
+            class="text-xs text-[#6C6C6C] flex items-center gap-2"
+          >
+            پروفایل وکیل
+            <svg
+              width="6"
+              height="11"
+              viewBox="0 0 6 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.79688 1L0.796875 5.5L4.79688 10"
+                stroke="#979797"
+                stroke-width="1.58"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </NuxtLink>
+        </div>
+      </div>
+      <button
+        class="w-full rounded bg-secondary text-white mt-5 p-3"
+        @click="visibleAccepted = false"
+      >
+        بستن
+      </button>
+    </Dialog>
+    <Toast />
   </tr>
 </template>
 
 <script setup>
 const visible = ref(false)
+const visibleRemove = ref(false)
+const visibleAccepted = ref(false)
 
 let randomNum = Math.ceil(Math.random() * 10)
+
+const selectedLawyer = ref()
+const lawyers = ref(['امیر برزگر', 'پوریا', 'اکبر اصغری', 'اصغر اکبری'])
+
+let toast = useToast()
+
+function acceptRequestFunc () {
+  if (!selectedLawyer.value) {
+    toast.add({
+      severity: 'error',
+      summary: 'خطا',
+      detail: 'برای تایید مشاوره ابتدا باید یک وکیل را انتخاب کنید',
+      life: 5000
+    })
+  } else {
+    visible.value = false
+    setTimeout(() => {
+      visibleAccepted.value = true
+    }, 300)
+  }
+}
+
+function removeRequest () {
+  visibleRemove.value = false
+
+  toast.add({
+    severity: 'success',
+    summary: 'موفقیت آمیز',
+    detail: 'درخواست حقوقی با موفقیت رد شد',
+    life: 5000
+  })
+}
 </script>

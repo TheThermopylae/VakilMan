@@ -81,11 +81,19 @@ a {
 }
 
 input {
-  @apply placeholder:text-gray-400 
+  @apply placeholder:text-gray-400
 }
 
 .p-select {
   @apply hover:!border-[#EFEFEF] !bg-[#F7F7F8] !shadow-none !border-[#EFEFEF]
+}
+
+.p-toast {
+  @apply w-11/12 max-w-[400px]
+}
+
+.p-toast-message {
+  box-shadow: none;
 }
 
 .p-select-label {
@@ -96,7 +104,7 @@ input {
   @apply bg-secondary text-white rounded px-6 py-2
 }
 
-.cancel-btn{
+.cancel-btn {
   @apply bg-[#EEEEEE] border rounded px-6 py-2
 }
 
