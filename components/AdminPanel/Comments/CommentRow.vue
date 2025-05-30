@@ -1,9 +1,9 @@
 <template>
-  <tr class="bg-white">
+  <tr class="bg-white border-b last:border-0">
     <td class="py-5 rounded-r">1</td>
     <td class="py-5 px-4">AmirBrzgr</td>
     <td class="py-5 px-4">1402/08/24</td>
-    <td class="py-5 px-4 text-xs text-right w-[400px] pr-0 leading-6">
+    <td class="py-5 px-4 text-xs text-right w-[300px] xl:w-[400px] pr-0 leading-6">
       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
       طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
       که لازم است
