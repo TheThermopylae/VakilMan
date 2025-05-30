@@ -373,9 +373,9 @@
               />
             </defs>
           </svg>
-          <div class="text-lg text-black flex flex-col justify-between">
+          <div class="text-lg text-black flex flex-col justify-between h-full">
             {{ selectedLawyer }}
-            <span class="block text-xs">وکیل پایه یک کانون وکلای دادگستری</span>
+            <nuxtLink class="text-[9px] md:text-xs block relative top-1.5 md:top-0">وکیل پایه یک کانون وکلای دادگستری</nuxtLink>
           </div>
         </div>
         <div class="flex flex-col justify-between items-end">
@@ -385,7 +385,7 @@
           >
           <NuxtLink
             to="/"
-            class="text-xs text-[#6C6C6C] flex items-center gap-2"
+            class="text-[9px] md:text-xs text-[#6C6C6C] flex items-center gap-2"
           >
             پروفایل وکیل
             <svg
