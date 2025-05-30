@@ -136,7 +136,10 @@
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/" class="flex justify-between items-center px-5 py-4">
+        <NuxtLink
+          to="/admin-panel/advice-requests"
+          class="flex justify-between items-center px-5 py-4"
+        >
           <div class="flex gap-3 font-peyda">
             <svg
               width="19"
