@@ -419,7 +419,7 @@
         </li>
         <li @click="visible = false">
           <NuxtLink
-            to="/"
+            to="/admin-panel/comments"
             class="flex justify-between items-center px-5 py-4 rounded-b"
           >
             <div class="flex gap-3 font-peyda">

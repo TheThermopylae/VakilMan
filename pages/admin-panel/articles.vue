@@ -1,1 +1,1 @@
-<template>koskesh</template>
+<template></template>

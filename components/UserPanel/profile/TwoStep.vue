@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-let types = ref([{ name: 'کصشر' }, { name: 'کصشر' }, { name: 'کصشر' }])
+let types = ref([{ name: 'salam' }, { name: 'salam' }, { name: 'salam' }])
 
 let selectType = ref('')
 </script>

@@ -56,5 +56,5 @@
 
 <script setup>
 let selectData = ref('')
-let data = [{ name: 'kir' }, { name: 'kos' }, { name: 'koon' }]
+let data = [{ name: 'salam' }, { name: 'salam' }, { name: 'salam' }]
 </script>
